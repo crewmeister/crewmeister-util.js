@@ -1,6 +1,6 @@
 {
   "name": "crewmeister-util",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A set of utility functions, mainly used by the crewmeister team.",
   "main": "index.js",
   "scripts": {
