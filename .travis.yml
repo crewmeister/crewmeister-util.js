@@ -1,16 +1,21 @@
 language: node_js
 node_js:
-  - "6.3"
-  - "5.11"
-  - "0.12"
-  - "iojs"
-
+- '6.3'
+- '5.11'
+- '0.12'
+- iojs
 cache:
   directories:
-    - node_modules
-
+  - node_modules
+before_install:
+- rvm install 2.2.2
+- gem install github_changelog_generator
 install:
-  - npm install
-
+- npm install
 script:
-  - npm run lint && npm run test
+- npm run lint && npm run test
+after_success:
+  - bash deploy.sh
+env:
+  global:
+    secure: s7l0WQt9U+KcRk5md6hAMSDbM+srr1wasbJhOr0vTmBDzpqX0Ia2ww2dwTLR7iBHmqU04J+bUPam1VCQJf6LLwbzNga1O9t1+FsITzt22LnsPLVWBwFYNoggndRy3wTJCufR7cOt7dKAxmIJfDOUhvqmZJHb5a5PQewvr4n9MP55+MHj6rm/6g/nxetMJebqGlkFVKOWGxWCViq72K2gHCyDfzAc1620xZad/9ceJB7gncL5lIGFksV/OG1j5JxH+POKrg8Exn4ec0PIeoCQKbX0/JHGKmyY+2+tL04gVcM357fkxZYgJa0LIMEo1tueOP91arflBDk4XEylzTOJFwauzHu/GalzF3S3FTnRJGlJujabSf2DYeDD8G6R5J/Hfo+jYlijra8Nc1l7ABp6uYgHgamqDUq/hsSX0kujOEq4BNyB0WZCjxrT2hnYxAFM3ogyUq70ajYvbLlzYVL/bWsycFw77TQ9iKpavL9Mo+Zd/njDziLxhmvVM9QZ8t6h9xKRGZ9UTHlxxO/mBP6KP+c3Kxch6JDpylNaqQMVUA1cSBJmPK/Nsz9+F0vp1BdpwkR39P51vRTBvmcvuRRpxMGp3QpMHW8s8vbNHmUglsSCf20uMu1k4v4B1smm1gZzsnUhKnFVckEu3Nu8OwNOTPmVRUu0FNQVMgEl+vykEmQ=
