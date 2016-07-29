@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$TRAVIS_BRANCH" != "master" ]
+if [ "$TRAVIS_BRANCH" != "test-changelog" ]
 then
   echo "This commit was made against the $TRAVIS_BRANCH and not the master! Changelog not updated!"
   exit 0
