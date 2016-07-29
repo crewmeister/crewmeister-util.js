@@ -9,6 +9,10 @@ fi
 github_changelog_generator
 
 rev=$(git rev-parse --short HEAD)
+
+git config user.name "Travis CI"
+git config user.email "thomas@crewmeister.com"
+
 git add -A .
 git commit -m "updated changelog at ${rev}"
 git push -q upstream HEAD:master
