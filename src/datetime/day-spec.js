@@ -164,4 +164,3 @@ describe('getDaysInMonth()', () => {
       assertThat(getDaysInMonth(2, 2401), equalTo(28)));
   });
 });
-

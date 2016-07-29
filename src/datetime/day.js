@@ -46,9 +46,8 @@ export const isWeekend = (maybeWeekend) => {
   return dayOfWeek === saturday || dayOfWeek === sunday;
 };
 
-const daysDifferenceToToday = (date, todayFn) => {
-  return Math.floor((+date - todayFn()) / ONE_DAY);
-};
+const daysDifferenceToToday = (date, todayFn) =>
+  Math.floor((+date - todayFn()) / ONE_DAY);
 
 export const daysDifferenceToTodayIncluding = (date, todayFn = today) =>
   daysDifferenceToToday(date, todayFn) + 1;
@@ -81,7 +80,7 @@ export const getDaysInMonth = (month, year) => {
   const isFebruary = month === 2;
   const isLeapYear = (!(year % 4) && year % 100) || !(year % 400);
 
-  if(isFebruary) {
+  if (isFebruary) {
     return isLeapYear ? 29 : 28;
   }
 
