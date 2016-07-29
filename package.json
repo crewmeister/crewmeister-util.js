@@ -4,7 +4,7 @@
   "description": "A set of utility functions, mainly used by the crewmeister team.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha src/{**,**/**}/*-spec.js --compilers js:babel-register --reporter=dot"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "babel-register": "^6.5.2",
     "eslint-config-crewmeister": "^2.0.0",
     "hamjest": "^2.13.0",
+    "lolex": "^1.5.1",
     "mocha": "^2.4.5"
   }
 }
