@@ -13,6 +13,10 @@ rev=$(git rev-parse --short HEAD)
 git config user.name "Travis CI"
 git config user.email "thomas@crewmeister.com"
 
+
+git remote add upstream "https://$GITHUB_TOKEN=@github.com/$TRAVIS_REPO_SLUG.git"
+git fetch upstream
+
 git add -A .
 git commit -m "updated changelog at ${rev}"
 git push -q upstream HEAD:master
