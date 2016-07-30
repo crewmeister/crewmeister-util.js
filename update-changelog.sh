@@ -16,6 +16,6 @@ git config user.email "thomas@crewmeister.com"
 git remote add upstream "https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git"
 git fetch upstream
 
-git add -A .
-git commit -m "updated changelog at ${rev}"
-git push upstream test-changelog
+echo 'add' && git add -A .
+echo 'commit' &&  git commit -m "updated changelog at ${rev}"
+echo 'push' && git push upstream test-changelog
