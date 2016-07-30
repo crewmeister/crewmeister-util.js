@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Automatically generate and commit changelog when PRs get merged. [\#2](https://github.com/crewmeister/crewmeister-util.js/pull/2) ([webPapaya](https://github.com/webPapaya))
 - Push to upstream instead of HEAD. [\#1](https://github.com/crewmeister/crewmeister-util.js/pull/1) ([webPapaya](https://github.com/webPapaya))
 
 ## [v0.1.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.1.0) (2016-07-29)
