@@ -6,8 +6,6 @@ then
   exit 0
 fi
 
-github_changelog_generator
-
 rev=$(git rev-parse --short HEAD)
 
 git config user.name "Travis CI"
@@ -15,7 +13,10 @@ git config user.email "thomas@crewmeister.com"
 
 git remote add upstream "https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git"
 git fetch upstream
+git checkout master
 
-echo 'add' && git add -A .
-echo 'commit' &&  git commit -m "updated changelog at ${rev}"
-echo 'push' && git push upstream test-changelog
+github_changelog_generator
+
+git add -A .
+git commit -m "updated changelog at ${rev}"
+git push upstream test-changelog
