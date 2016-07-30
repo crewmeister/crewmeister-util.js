@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/crewmeister/crewmeister-util.js/tree/HEAD)
+
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Push to upstream instead of HEAD. [\#1](https://github.com/crewmeister/crewmeister-util.js/pull/1) ([webPapaya](https://github.com/webPapaya))
+
 ## [v0.1.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.1.0) (2016-07-29)
 
 
