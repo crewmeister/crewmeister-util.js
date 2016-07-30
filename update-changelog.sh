@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [ "$TRAVIS_BRANCH" == "$CHANGELOG_BRANCH" ]
-then
+if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$CHANGELOG_BRANCH" ]; then
   echo "This commit was made against the $TRAVIS_BRANCH and not $CHANGELOG_BRANCH! Changelog not updated!"
   exit 0
 fi
