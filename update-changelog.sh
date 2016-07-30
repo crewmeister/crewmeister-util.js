@@ -18,4 +18,4 @@ git fetch upstream
 
 git add -A .
 git commit -m "updated changelog at ${rev}"
-git push upstream master
+git push upstream test-changelog
