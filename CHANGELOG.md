@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Host update-changelog.md as a gist, to use it in other projects. [\#3](https://github.com/crewmeister/crewmeister-util.js/pull/3) ([webPapaya](https://github.com/webPapaya))
 - Automatically generate and commit changelog when PRs get merged. [\#2](https://github.com/crewmeister/crewmeister-util.js/pull/2) ([webPapaya](https://github.com/webPapaya))
 - Push to upstream instead of HEAD. [\#1](https://github.com/crewmeister/crewmeister-util.js/pull/1) ([webPapaya](https://github.com/webPapaya))
 
