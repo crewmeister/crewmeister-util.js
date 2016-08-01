@@ -7,8 +7,13 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
+CHANGELOG_NAME=${CHANGELOG_NAME:='Travis CI'}
+CHANGELOG_EMAIL=${CHANGELOG_EMAIL:='travis@github.com'}
+
 git config user.name "Travis CI"
-git config user.email "thomas@crewmeister.com"
+git config user.email $CHANGELOG_EMAIL
+
+CHANGELOG_BRANCH=${CHANGELOG_BRANCH:='master'}
 
 git remote add upstream "https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git"
 git fetch upstream
