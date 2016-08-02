@@ -7,15 +7,12 @@ node_js:
 cache:
   directories:
   - node_modules
-before_install:
-- rvm install 2.2.2
-- gem install github_changelog_generator
 install:
 - npm install
 script:
 - npm run lint && npm run test
 after_success:
-- curl https://gist.githubusercontent.com/webPapaya/65651d31f538dbe3f64a65e7b77de551/raw/5324e468917fb0cc7b625c9eddf871ad160a5441/deploy-changelog.sh > deploy-changelog.sh && chmod u+x deploy-changelog.sh && ./deploy-changelog.sh
+- curl https://gist.githubusercontent.com/webPapaya/65651d31f538dbe3f64a65e7b77de551/raw/deploy-changelog.sh > deploy-changelog.sh && chmod u+x deploy-changelog.sh && ./deploy-changelog.sh;
 env:
   global:
   - CHANGELOG_BRANCH=master
