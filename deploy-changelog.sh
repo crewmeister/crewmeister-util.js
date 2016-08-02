@@ -5,6 +5,8 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$CHANGELOG_BRANCH
   exit 0
 fi
 
+gem install github_changelog_generator
+
 rev=$(git rev-parse --short HEAD)
 
 CHANGELOG_EMAIL=${CHANGELOG_EMAIL:='travis@github.com'}
