@@ -1,8 +1,16 @@
 # Change Log
 
-## [Unreleased](https://github.com/crewmeister/crewmeister-util.js/tree/HEAD)
+## [v0.5.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.5.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.4.0...v0.5.0)
 
-[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.1.0...HEAD)
+## [v0.4.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.4.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.2.0...v0.4.0)
+
+## [v0.2.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.2.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.3.0...v0.2.0)
+
+## [v0.3.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.3.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.1.0...v0.3.0)
 
 **Merged pull requests:**
 
