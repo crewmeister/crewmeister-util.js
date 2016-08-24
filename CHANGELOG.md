@@ -2,10 +2,27 @@
 
 ## [Unreleased](https://github.com/crewmeister/crewmeister-util.js/tree/HEAD)
 
-[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.1.0...HEAD)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.5.0...HEAD)
 
 **Merged pull requests:**
 
+- Fix the millisenconds for `startOfDay\(\)`. [\#5](https://github.com/crewmeister/crewmeister-util.js/pull/5) ([wolframkriesing](https://github.com/wolframkriesing))
+
+## [v0.5.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.5.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.4.0...v0.5.0)
+
+## [v0.4.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.4.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.2.0...v0.4.0)
+
+## [v0.2.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.2.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.3.0...v0.2.0)
+
+## [v0.3.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.3.0) (2016-08-11)
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.1.0...v0.3.0)
+
+**Merged pull requests:**
+
+- Make datetime importable when using it as a dependency [\#4](https://github.com/crewmeister/crewmeister-util.js/pull/4) ([wolframkriesing](https://github.com/wolframkriesing))
 - Host update-changelog.md as a gist, to use it in other projects. [\#3](https://github.com/crewmeister/crewmeister-util.js/pull/3) ([webPapaya](https://github.com/webPapaya))
 - Automatically generate and commit changelog when PRs get merged. [\#2](https://github.com/crewmeister/crewmeister-util.js/pull/2) ([webPapaya](https://github.com/webPapaya))
 - Push to upstream instead of HEAD. [\#1](https://github.com/crewmeister/crewmeister-util.js/pull/1) ([webPapaya](https://github.com/webPapaya))

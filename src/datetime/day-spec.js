@@ -124,6 +124,15 @@ describe('`startOfWeek()`', () => {
   });
 });
 
+describe('`startOfDay`', () => {
+  it('is always 00:00:00.000 (no milliseconds left)', () => {
+    const dayWithMs = new Date('2001-01-01T12:34:56.789');
+    const dateInSameTimezone = (date) => new Date(new Date(date).setMinutes(dayWithMs.getTimezoneOffset()));
+    const dayWithoutMs = dateInSameTimezone('2001-01-01T00:00:00.000');
+    assertThat(startOfDay(dayWithMs), equalTo(dayWithoutMs));
+  });
+});
+
 import { getDaysInMonth } from './day';
 describe('getDaysInMonth()', () => {
   it('April has 30 days', () =>

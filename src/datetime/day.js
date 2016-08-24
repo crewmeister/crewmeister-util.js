@@ -23,6 +23,7 @@ export const startOfDay = (date) => {
   start.setHours(0);
   start.setMinutes(0);
   start.setSeconds(0);
+  start.setMilliseconds(0);
   return start;
 };
 
