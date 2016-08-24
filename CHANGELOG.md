@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/crewmeister/crewmeister-util.js/tree/HEAD)
+
+[Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.5.0...HEAD)
+
+**Merged pull requests:**
+
+- Fix the millisenconds for `startOfDay\(\)`. [\#5](https://github.com/crewmeister/crewmeister-util.js/pull/5) ([wolframkriesing](https://github.com/wolframkriesing))
+
 ## [v0.5.0](https://github.com/crewmeister/crewmeister-util.js/tree/v0.5.0) (2016-08-11)
 [Full Changelog](https://github.com/crewmeister/crewmeister-util.js/compare/v0.4.0...v0.5.0)
 
